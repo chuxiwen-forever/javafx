@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="o_Parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="829.0" style="-fx-background-color: linear-gradient(#feeeed,#fedcbd);" xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liu.controller.RootController">
+   <children>
+      <TabPane layoutX="172.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="638.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="题库管理">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fffef9;-fx-background-radius: 30px ">
+                     <children>
+                        <TableView fx:id="table1" prefHeight="372.0" prefWidth="307.0">
+                           <columns>
+                              <TableColumn fx:id="o_text_name1" prefWidth="75.0" text="试卷名字" />
+                              <TableColumn fx:id="o_text_teacher1" prefWidth="75.0" text="出题老师" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="o_delText_button" layoutX="430.0" layoutY="230.0" mnemonicParsing="false" onAction="#delText" text="删除试卷" />
+                        <Button fx:id="o_addText_button" layoutX="430.0" layoutY="150.0" mnemonicParsing="false" onAction="#addText" text="添加试卷" />
+                        <Button fx:id="o_selText_button" layoutX="430.0" layoutY="300.0" mnemonicParsing="false" onAction="#selText" text="查询试卷" />
+                        <Label fx:id="o_teacherName_label" layoutX="360.0" layoutY="265.0" text="老师姓名" />
+                        <TextField fx:id="o_teacherName" layoutX="433.0" layoutY="265.0" />
+                        <Label fx:id="o_label5" layoutX="360.0" layoutY="186.0" text="试卷名字" />
+                        <TextField fx:id="o_delTextF" layoutX="433.0" layoutY="182.0" />
+                        <TextField fx:id="o_addTextName" layoutX="433.0" layoutY="76.0" />
+                        <Label fx:id="o_label3" layoutX="360.0" layoutY="80.0" text="试卷名字" />
+                        <Label fx:id="o_label2" layoutX="330.0" layoutY="41.0" text="试卷管理" />
+                        <Label fx:id="o_label4" layoutX="360.0" layoutY="116.0" text="出题老师" />
+                        <TextField fx:id="o_addTeName" layoutX="433.0" layoutY="112.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="学生管理">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fffef9;-fx-background-radius: 30px ">
+                     <children>
+                        <TableView fx:id="table2" prefHeight="372.0" prefWidth="271.0">
+                          <columns>
+                            <TableColumn fx:id="o_stu_name1" prefWidth="75.0" text="学生姓名" />
+                            <TableColumn fx:id="o_stu_sex1" prefWidth="75.0" text="学生性别" />
+                             <TableColumn fx:id="o_stu_num1" prefWidth="120.0" text="学生学号" />
+                          </columns>
+                        </TableView>
+                        <Label fx:id="o_stuId_label" layoutX="300.0" layoutY="80.0" text="学号" />
+                        <TextField fx:id="o_stuId" layoutX="340.0" layoutY="80.0" />
+                        <Button fx:id="o_selStu_button" layoutX="368.0" layoutY="146.0" mnemonicParsing="false" onAction="#selStu1" text="查询该学生" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="分数查询">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fffef9;-fx-background-radius: 30px ">
+                     <children>
+                        <TableView fx:id="table3" prefHeight="373.0" prefWidth="396.0">
+                          <columns>
+                            <TableColumn fx:id="o_stu_num2" prefWidth="98.5" text="学生学号" />
+                            <TableColumn fx:id="o_stu_name2" prefWidth="59.5" text="学生姓名" />
+                              <TableColumn fx:id="o_text_name2" prefWidth="96.0" text="试卷名字" />
+                              <TableColumn fx:id="o_text_teacher2" prefWidth="69.0" text="出题老师" />
+                              <TableColumn fx:id="o_stu_grade" prefWidth="71.0" text="学生成绩" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="o_selStu_button2" layoutX="464.0" layoutY="164.0" mnemonicParsing="false" onAction="#selStu2" text="查询该学生" />
+                        <Label fx:id="o_stuId_label2" layoutX="430.0" layoutY="120.0" text="学号" />
+                        <TextField fx:id="o_stuId2" layoutX="460.0" layoutY="120.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Label fx:id="o_label1" layoutX="342.0" layoutY="14.0" prefHeight="36.0" prefWidth="271.0" text="欢迎来到root管理中心" />
+      <Button fx:id="reStage" layoutX="172.0" layoutY="67.0" mnemonicParsing="false" onAction="#eveBegin" text="重置" />
+      <Button fx:id="reMain1" layoutX="26.0" layoutY="21.0" mnemonicParsing="false" text="&lt;-" onAction="#reMain" />
+   </children>
+</Pane>

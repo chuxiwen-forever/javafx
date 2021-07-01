@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="771.0" style="-fx-background-color: linear-gradient(#33a3dc,#fffef9);" xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liu.controller.LoginController">
+   <children>
+      <Label fx:id="reName" layoutX="76.0" layoutY="46.0" prefHeight="32.0" prefWidth="62.0" />
+      <Label fx:id="common" layoutX="144.0" layoutY="47.0" prefHeight="32.0" prefWidth="263.0" text="同学！欢迎你的使用！" />
+      <TabPane layoutX="138.0" layoutY="97.0" prefHeight="361.0" prefWidth="459.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="选择试卷">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fffef9;-fx-background-radius: 30px ">
+                     <children>
+                        <TableView fx:id="n_table1" layoutX="-2.0" prefHeight="333.0" prefWidth="209.0">
+                          <columns>
+                            <TableColumn fx:id="n_column1" prefWidth="105.0" text="试卷名称" />
+                            <TableColumn fx:id="n_column2" prefWidth="103.0" text="出卷老师" />
+                          </columns>
+                        </TableView>
+                        <Label fx:id="n_label1" layoutX="230.0" layoutY="25.0" prefHeight="32.0" prefWidth="215.0" text="选择你想考的卷子" />
+                        <Label fx:id="n_label2" layoutX="223.0" layoutY="72.0" text="试卷名称" />
+                        <TextField fx:id="n_text1" layoutX="284.0" layoutY="68.0" />
+                        <Label fx:id="n_label3" layoutX="232.0" layoutY="151.0" text="分数" />
+                        <TextField fx:id="n_text2" layoutX="284.0" layoutY="147.0" />
+                        <Button fx:id="n_button1" layoutX="303.0" layoutY="219.0" mnemonicParsing="false" onAction="#comeText" prefHeight="24.0" prefWidth="62.0" text="提交" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="查询成绩">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="459.0" style="-fx-background-color: #fffef9;-fx-background-radius: 30px ">
+                     <children>
+                        <TableView fx:id="n_table2" prefHeight="332.0" prefWidth="459.0">
+                          <columns>
+                            <TableColumn fx:id="n_column3" prefWidth="168.5" text="试卷名称" />
+                            <TableColumn fx:id="n_column4" prefWidth="117.0" text="出卷老师" />
+                              <TableColumn fx:id="n_column5" prefWidth="172.5" text="考试成绩" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="修改个人资料">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fffef9;-fx-background-radius: 30px ">
+                     <children>
+                        <Label fx:id="n_label4" layoutX="77.0" layoutY="41.0" prefHeight="23.0" prefWidth="132.0" text="原密码：" />
+                        <PasswordField fx:id="n_pass1" layoutX="117.0" layoutY="77.0" />
+                        <Label fx:id="n_label5" layoutX="77.0" layoutY="124.0" text="新密码：" />
+                        <PasswordField fx:id="n_pass2" layoutX="117.0" layoutY="155.0" />
+                        <Label fx:id="n_label6" layoutX="77.0" layoutY="208.0" text="确定密码：" />
+                        <PasswordField fx:id="n_pass3" layoutX="117.0" layoutY="232.0" />
+                        <Button fx:id="n_button2" layoutX="209.0" layoutY="282.0" mnemonicParsing="false" onAction="#rePassword" text="确定修改" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

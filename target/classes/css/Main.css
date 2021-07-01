@@ -1,0 +1,262 @@
+/**
+main
+ */
+#m_button{
+    -fx-background-color: #fcf16e;
+    -fx-background-radius: 25px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#m_text{
+    -fx-font-size: 15pt ;
+    -fx-font-weight: bold ;
+}
+#m_username{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#m_password{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#m_name{
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+}
+#m_username{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#m_pass{
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+}
+#m_password{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#m_register{
+    -fx-text-fill: #a1a3a6;
+    -fx-font-size: 9pt;
+}
+
+
+/**
+register
+ */
+#r_number{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#r_password{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#r_username{
+    -fx-background-radius: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#r_label1{
+    -fx-font-size: 15pt;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: 	#F8F8FF;
+}
+#r_label2{
+    -fx-font-size: 10pt;
+    -fx-text-fill: #2F4F4F;
+    -fx-font-weight: bold;
+}
+#r_label3{
+    -fx-font-size: 10pt;
+    -fx-text-fill: #2F4F4F;
+    -fx-font-weight: bold;
+}
+#r_label4{
+    -fx-font-size: 10pt;
+    -fx-text-fill: #2F4F4F;
+    -fx-font-weight: bold;
+}
+#r_label5{
+    -fx-font-size: 10pt;
+    -fx-text-fill: #2F4F4F;
+    -fx-font-weight: bold;
+}
+#r_register{
+    -fx-background-radius: 10px;
+    -fx-background-color: #fcf16e;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#re{
+    -fx-background-radius: 30px;
+    -fx-background-color: #45b97c;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+/**
+root
+ */
+
+#table1{
+    -fx-background-radius: 30px;
+}
+/*label*/
+#o_label1{
+    -fx-font-weight: bold;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #464547;
+    -fx-font-family: kaiti;
+    -fx-text-alignment: center;
+}
+#o_label2{
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+}
+/*button*/
+#o_delText_button{
+    -fx-background-radius: 110px;
+    -fx-background-color: #a3cf62;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_addText_button{
+    -fx-background-radius: 10px;
+    -fx-background-color: #a3cf62;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_selText_button{
+    -fx-background-radius: 10px;
+    -fx-background-color: #a3cf62;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_selStu_button{
+    -fx-background-radius: 10px;
+    -fx-background-color: #a3cf62;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_selStu_button2{
+    -fx-background-radius: 10px;
+    -fx-background-color: #a3cf62;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#reStage{
+    -fx-background-radius: 20px;
+    -fx-background-color: #90d7ec;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#reMain1{
+    -fx-background-radius: 15px;
+    -fx-background-color: #45b97c;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+/*textFiled*/
+#o_teacherName{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_delTextF{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_addTeName{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_addTextName{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_stuId{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#o_stuId2{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+/**
+login
+ */
+#reName{
+    -fx-text-alignment: right;
+    -fx-font-size: 15pt;
+    -fx-font-family: kaiti;
+    -fx-font-weight: bolder;
+}
+#common{
+    -fx-font-family: "MV Boli";
+    -fx-font-size: 13pt;
+    -fx-font-weight: bold;
+}
+#n_label1{
+    -fx-text-alignment: center;
+    -fx-font-size: 13pt;
+    -fx-font-weight: bolder;
+    -fx-text-fill: #00ae9d;
+}
+#n_label2{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #afdfe4;
+}
+#n_label3{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #afdfe4;
+}
+#n_text1{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#n_text2{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#n_button1{
+    -fx-background-radius: 10px;
+    -fx-background-color: #fcf16e;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#n_label4{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #afdfe4;
+}
+#n_label5{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #afdfe4;
+}
+#n_label6{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #afdfe4;
+}
+#n_pass1{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#n_pass2{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#n_pass3{
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#n_button2{
+    -fx-background-radius: 10px;
+    -fx-background-color: #fcf16e;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+
+
+
+
+
+
+
+
+
+
+

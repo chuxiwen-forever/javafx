@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="981.0" style="-fx-background-color: linear-gradient(#84bf96,#f2eada);" xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liu.controller.MainController">
+   <children>
+      <Label fx:id="m_text" layoutX="450.0" layoutY="100.0" text="考试管理平台">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="m_button" layoutX="491.0" layoutY="356.0" mnemonicParsing="false" onAction="#login" prefHeight="29.0" prefWidth="84.0" text="登录" />
+      <TextField fx:id="m_username" layoutX="500.0" layoutY="200.0" />
+      <PasswordField fx:id="m_password" layoutX="500.0" layoutY="300.0" />
+      <Label fx:id="m_name" layoutX="470.0" layoutY="200.0" prefHeight="29.0" prefWidth="51.0" text="姓名" />
+      <Label fx:id="m_pass" layoutX="470.0" layoutY="300.0" prefHeight="29.0" prefWidth="61.0" text="密码" />
+      <Label fx:id="m_register" layoutX="470.0" layoutY="400.0" onMouseClicked="#register" prefHeight="15.0" prefWidth="110.0" text="没有账户？点我注册" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="236.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/1.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

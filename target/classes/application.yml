@@ -1,0 +1,17 @@
+javafx:
+  title: JavaFx
+  appicons: /icon/icon.png
+  stage:
+    width: 1000
+    height: 600
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/examination?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
+
+
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml

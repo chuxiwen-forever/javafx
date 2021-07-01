@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liu.mapper.CommonMapper">
+    <select id="selectAllMessage" resultType="com.liu.entity.Common">
+        select * from user,textpaper,grade
+        where user.u_id=grade.u_id and textpaper.t_id=grade.t_id;
+    </select>
+    <select id="selectMessageById" resultType="com.liu.entity.Common">
+        select * from user,textpaper,grade
+        where user.u_id=grade.u_id and textpaper.t_id=grade.t_id and u_number=#{name};
+    </select>
+</mapper>

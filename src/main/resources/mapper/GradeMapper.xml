@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liu.mapper.GradeMapper">
+    <select id="selectAllGrade" resultType="com.liu.entity.Grade">
+        select * from user,textpaper,grade
+        where grade.t_id=textpaper.t_id and user.u_id=grade.u_id and user.u_username =#{name};
+    </select>
+    <insert id="insertGrade" parameterType="com.liu.entity.MadeGrade">
+        insert into grade (t_id,u_id,grade)
+        values (#{t_id},#{u_id},#{grade});
+    </insert>
+    <select id="selectBeTrue" parameterType="String" resultType="com.liu.entity.Grade">
+        select * from user,textpaper,grade
+        where grade.t_id=textpaper.t_id and user.u_id=grade.u_id
+        and user.u_username =#{username} and t_paperName=#{textName};
+    </select>
+</mapper>
